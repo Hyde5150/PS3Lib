@@ -200,7 +200,7 @@ namespace PS3Lib
             else isOK = false;
             if (isOK)
             {
-                ulong uProcess = Parameters.processIDs[0];
+                ulong uProcess = Parameters.processIDs[1];
                 Parameters.ProcessID = Convert.ToUInt32(uProcess);
                 PS3TMAPI.ProcessAttach(Target, PS3TMAPI.UnitType.PPU, Parameters.ProcessID);
                 PS3TMAPI.ProcessContinue(Target, Parameters.ProcessID);
